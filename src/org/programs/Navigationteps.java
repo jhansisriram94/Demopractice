@@ -8,6 +8,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Navigationteps {
 	
+	public void test()
+	{
+		System.out.println("Testing the application");
+	}
+	
 	public static void main(String[] args) {
 		//System.setProperty("webdriver.chrome.driver", "d://chromedriver.exe");
 		ChromeOptions co=new ChromeOptions();
@@ -22,6 +27,10 @@ public class Navigationteps {
 		driver.navigate().back();
 		driver.navigate().forward();
 		driver.navigate().refresh();
+		System.out.println("Testing");
+		
+		Navigationteps c=new Navigationteps();
+		c.test();
 		
 		//difference btw get() and navigate().to() methods
 		//get-it will wait until the webpage is loaded completely and it will not maintain browser cookies
